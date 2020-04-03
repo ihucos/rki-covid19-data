@@ -1,3 +1,5 @@
+# Beta
+
 # covid19-data
 A helper to access Robert Koch-Institut's covid19 data more easily
 
