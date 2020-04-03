@@ -1,6 +1,8 @@
-import requests
-import csv
 from datetime import date
+import csv
+import sys
+
+import requests
 
 API_PATH = "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query"
 PER_PAGE = 1000
@@ -34,7 +36,11 @@ BASE_QUERY = dict(
     f="json",
 )
 
-outfile = "./data/rki_covid19.{}.csv".format(date.today())
+try:
+    outfile = sys.argv[1]
+except IndexError:
+    print("missing argument: output file", file=sys.stderr)
+    sys.exit(1)
 
 with open(outfile, "w") as file:
     writer = csv.DictWriter(file, fieldnames=OUT_FIELDS)
