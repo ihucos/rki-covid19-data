@@ -12,3 +12,6 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 import pandas
 df = pandas.read_csv('https://raw.githubusercontent.com/ihucos/covid19-data/master/data.csv')
 ```
+
+## Daily update status
+[![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
