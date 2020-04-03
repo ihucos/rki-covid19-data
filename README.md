@@ -6,3 +6,9 @@ The [Robert Koch-Institut](https://www.rki.de/) (rki) maintains a [dashboard](ht
 That dashboard provides an (undocumented?) [API](https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query)
 
 This repository uses that api to dump all data from the table `RKI_COVID19` into an csv file that can be used for E. g. analysis with pandas, costum dashboards or whatever else you find useful.
+
+## Loading this data with pandas
+```
+import pandas
+df = pandas.read_csv('https://raw.githubusercontent.com/ihucos/covid19-data/master/data.csv')
+```
