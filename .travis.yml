@@ -1,0 +1,11 @@
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "YOUR GIT USER NAME"
+  - git config --local user.email "YOUR GIT USER EMAIL"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+deploy:
+  provider: releases
+  api_key:
+    secure: BqCfXLaX+OtHL6cHVYg26L6NlrN74GeV7VBMknk9hxwevHPoHR5wY+J/VFIKE9b1WwqNkWxywT8DCvmmbq767ZyYievw5O6F8FoKRjeGyNZl0m1C4BFkx+0872qeL4lGmWUxHqJy0HA8adUF3OeXMV4mpSE8XM/JpAfL6zNjtRXMVMifQGMLGC4MpNG+txufvX+W1kzAtnfn1rEcxGiNYmyC0c2ev1ayrXmH1fXCUAfdwjoAKceiyBp9RpR7l0eA3N1FL9epaMD8ENblic+8VPNv6Pkb5T4RSN11ApLgnSOPg8ib4mZgiSult19U2fL40/9iLP/+LjhNq8dYg2OKMkAC960K+qGKPMLEpK0/fwkl55iq/7Cb8vodBKy6ernmpH/U9iSBbQyEOPPIh8NkrJz03bQozZKz40ZpR9ktJTm5f15ijNZXDbWUR7dLzUr96rVxomT83htQB6s0Qa99l+CaHoHVniwu+21WqSRI0p4iUyq+RBPgPZe5I+xEkLhLumDzzman4+RIHnwYEaPGoP55xDDIlCslsle4sJvFV1eRPLh4t74aX0oo9EhnaId7xIMHocCLOwvxRvv1Wg5z0CGfHztlMZrq4Etu1ry/shla8n48atsz7vVixAsRl0YQoIv6CNlMFkM7BXjOa+71lX46Gv/2xMN5/7STstlT0OY=
+  file: "./data.csv"
