@@ -5,17 +5,8 @@ That dashboard provides an (undocumented?) [API](https://services7.arcgis.com/mO
 
 This repository uses that api to dump all data from the table `RKI_COVID19` into an csv file that can be used for E. g. analysis with pandas, costum dashboards or whatever else you find useful. The data is downloaded every day and can be found under releases. You can also just run that script locally.
 
-
-## Sample ([./data_sample.csv](./data_sample.csv))
-
-|              |            |                 |              |            |            |                 |          |               |             |                         |           |                | 
-|--------------|------------|-----------------|--------------|------------|------------|-----------------|----------|---------------|-------------|-------------------------|-----------|----------------| 
-| IdBundesland | Bundesland | Landkreis       | Altersgruppe | Geschlecht | AnzahlFall | AnzahlTodesfall | ObjectId | Meldedatum    | IdLandkreis | Datenstand              | NeuerFall | NeuerTodesfall | 
-| 10           | Saarland   | LK Sankt Wendel | A60-A79      | W          | 1          | 0               | 697852   | 1585785600000 | 10046       | "03.04.2020, 00:00 Uhr" | 1         | -9             | 
-| 10           | Saarland   | LK Sankt Wendel | A80+         | M          | 1          | 0               | 697853   | 1585699200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
-| 10           | Saarland   | LK Sankt Wendel | unbekannt    | M          | 1          | 0               | 697854   | 1583971200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
-| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697855   | 1583366400000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
-| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697856   | 1583884800000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -              | 
+## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
+[![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
 
 ## Integrate with pandas
 ```
@@ -27,6 +18,14 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 79696
 ```
 
-## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
-[![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
 
+## Sample ([./data_sample.csv](./data_sample.csv))
+
+|              |            |                 |              |            |            |                 |          |               |             |                         |           |                | 
+|--------------|------------|-----------------|--------------|------------|------------|-----------------|----------|---------------|-------------|-------------------------|-----------|----------------| 
+| IdBundesland | Bundesland | Landkreis       | Altersgruppe | Geschlecht | AnzahlFall | AnzahlTodesfall | ObjectId | Meldedatum    | IdLandkreis | Datenstand              | NeuerFall | NeuerTodesfall | 
+| 10           | Saarland   | LK Sankt Wendel | A60-A79      | W          | 1          | 0               | 697852   | 1585785600000 | 10046       | "03.04.2020, 00:00 Uhr" | 1         | -9             | 
+| 10           | Saarland   | LK Sankt Wendel | A80+         | M          | 1          | 0               | 697853   | 1585699200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 10           | Saarland   | LK Sankt Wendel | unbekannt    | M          | 1          | 0               | 697854   | 1583971200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697855   | 1583366400000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697856   | 1583884800000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -              | 
