@@ -1,5 +1,3 @@
-# WORK IN PROGRESS
-
 # covid19-data
 A helper to access Robert Koch-Institut's covid19 data more easily
 
@@ -22,3 +20,15 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 >>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
 79696
 ```
+
+## Sample ([./data_sample.csv](./data_sample.csv))
+
+|              |            |                 |              |            |            |                 |          |               |             |                         |           |                | 
+|--------------|------------|-----------------|--------------|------------|------------|-----------------|----------|---------------|-------------|-------------------------|-----------|----------------| 
+| IdBundesland | Bundesland | Landkreis       | Altersgruppe | Geschlecht | AnzahlFall | AnzahlTodesfall | ObjectId | Meldedatum    | IdLandkreis | Datenstand              | NeuerFall | NeuerTodesfall | 
+| 10           | Saarland   | LK Sankt Wendel | A60-A79      | W          | 1          | 0               | 697852   | 1585785600000 | 10046       | "03.04.2020, 00:00 Uhr" | 1         | -9             | 
+| 10           | Saarland   | LK Sankt Wendel | A80+         | M          | 1          | 0               | 697853   | 1585699200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 10           | Saarland   | LK Sankt Wendel | unbekannt    | M          | 1          | 0               | 697854   | 1583971200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697855   | 1583366400000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
+| 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697856   | 1583884800000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -              | 
+
