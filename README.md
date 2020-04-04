@@ -1,4 +1,4 @@
-# covid19-data
+# rki-covid19-data
 A helper to access Robert Koch-Institut's covid19 data more easily
 
 ## Where does this data come from?
