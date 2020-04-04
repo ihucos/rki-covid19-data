@@ -1,3 +1,4 @@
+IdBundesland,Bundesland,Landkreis,Altersgruppe,Geschlecht,AnzahlFall,AnzahlTodesfall,ObjectId,Meldedatum,IdLandkreis,Datenstand,NeuerFall,NeuerTodesfall
 10,Saarland,LK Sankt Wendel,A60-A79,W,1,0,697852,1585785600000,10046,"03.04.2020, 00:00 Uhr",1,-9
 10,Saarland,LK Sankt Wendel,A80+,M,1,0,697853,1585699200000,10046,"03.04.2020, 00:00 Uhr",0,-9
 10,Saarland,LK Sankt Wendel,unbekannt,M,1,0,697854,1583971200000,10046,"03.04.2020, 00:00 Uhr",0,-9
