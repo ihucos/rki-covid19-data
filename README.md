@@ -17,6 +17,8 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 ```
 >>> import pandas
 >>> df = pandas.read_csv('https://github.com/ihucos/covid19-data/releases/download/2020-04-03/data.csv')
->>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()  # get the total verified infections as shown in the dashboard
+>>>
+>>> # get the total verified infections as shown in the dashboard
+>>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
 79696
 ```
