@@ -11,16 +11,6 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 ## Daily update status
 [![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
 
-## Loading this data with pandas
-```
->>> import pandas
->>> df = pandas.read_csv('https://github.com/ihucos/covid19-data/releases/download/2020-04-03/data.csv')
->>>
->>> # get the total verified infections as shown in the dashboard
->>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
-79696
-```
-
 ## Sample ([./data_sample.csv](./data_sample.csv))
 
 |              |            |                 |              |            |            |                 |          |               |             |                         |           |                | 
@@ -32,3 +22,12 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 | 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697855   | 1583366400000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
 | 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697856   | 1583884800000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -              | 
 
+## Load this data with pandas
+```
+>>> import pandas
+>>> df = pandas.read_csv('https://github.com/ihucos/covid19-data/releases/download/2020-04-03/data.csv')
+>>>
+>>> # get the total verified infections as shown in the dashboard
+>>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
+79696
+```
