@@ -6,9 +6,6 @@ That dashboard provides an (undocumented?) [API](https://services7.arcgis.com/mO
 This repository uses that api to dump all data from the table `RKI_COVID19` into an csv file that can be used for E. g. analysis with pandas, costum dashboards or whatever else you find useful. The data is downloaded every day and can be found under releases. You can also just run that script locally.
 
 
-## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
-[![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
-
 ## Sample ([./data_sample.csv](./data_sample.csv))
 
 |              |            |                 |              |            |            |                 |          |               |             |                         |           |                | 
@@ -29,3 +26,7 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 >>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
 79696
 ```
+
+## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
+[![Build Status](https://travis-ci.org/ihucos/covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/covid19-data)
+
