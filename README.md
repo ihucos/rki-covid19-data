@@ -38,4 +38,6 @@ This repository uses that api to dump all data from the table `RKI_COVID19` into
 2  03.04.2020, 00:00 Uhr          0              -9
 3  03.04.2020, 00:00 Uhr          0              -9
 4  03.04.2020, 00:00 Uhr          0              -9
+>>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()  # get the total verified infections as shown in the dashboard
+79696
 ```
