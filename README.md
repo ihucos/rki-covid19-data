@@ -9,7 +9,7 @@ That dashboard provides an (undocumented?) [API](https://services7.arcgis.com/mO
 ## Integrate with pandas
 ```
 >>> import pandas
->>> df = pandas.read_csv('https://github.com/ihucos/covid19-data/rki-releases/download/2020-04-03/data.csv')
+>>> df = pandas.read_csv('https://github.com/ihucos/rki-covid19-data/releases/download/2020-04-03/data.csv')
 >>>
 >>> #  Total verified infections as shown in dashboard
 >>> df['AnzahlFall'][df['AnzahlFall'] > 0].sum()
