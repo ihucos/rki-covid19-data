@@ -1,7 +1,7 @@
 # rki-covid19-data
 
 The [Robert Koch-Institut](https://www.rki.de/) (rki) maintains a [dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4) with the development of verified covid19 infections in germany.
-That dashboard provides an (undocumented?) [API](https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query). This repository uses that API to dump all data from the table `RKI_COVID19` into a csv file that could fit your use case better than the somewhat raw API.
+That dashboard provides an [arcgis API](https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query). This repository uses that API to dump all data from the table `RKI_COVID19` into a csv file for convenient consumption.
 
 ## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
 [![Build Status](https://travis-ci.org/ihucos/rki-covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/rki-covid19-data) (In progress)
