@@ -27,3 +27,7 @@ That dashboard provides an [arcgis API](https://services7.arcgis.com/mOBPykOjAyB
 | 10           | Saarland   | LK Sankt Wendel | unbekannt    | M          | 1          | 0               | 697854   | 1583971200000 | 10046       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
 | 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697855   | 1583366400000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -9             | 
 | 11           | Berlin     | SK Berlin Mitte | A00-A04      | M          | 1          | 0               | 697856   | 1583884800000 | 11001       | "03.04.2020, 00:00 Uhr" | 0         | -              | 
+
+
+## Note
+CI is triggered with https://cron-job.org/ at 1am Europe/Berlin to upload a new release
