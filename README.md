@@ -4,7 +4,7 @@ The [Robert Koch-Institut](https://www.rki.de/) (rki) maintains a [dashboard](ht
 That dashboard provides an [arcgis API](https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query). This repository uses that API to dump all data from the table `RKI_COVID19` into a csv file for convenient consumption.
 
 ## Daily [Releases](https://github.com/ihucos/covid19-data/releases)
-[![Build Status](https://travis-ci.org/ihucos/rki-covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/rki-covid19-data) (In progress)
+[![Build Status](https://travis-ci.org/ihucos/rki-covid19-data.svg?branch=master)](https://travis-ci.org/ihucos/rki-covid19-data)
 
 ## Integrate with pandas
 ```
